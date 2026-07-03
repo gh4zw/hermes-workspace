@@ -16,8 +16,8 @@ jobs:
           ref: master  # 确保你在正确的分支上工作
       - name: Sync fork with upstream
         run: |
-          git config user.name "your-username"  # 设置用户名，用于提交信息
-          git config user.email "your-email@example.com"  # 设置邮箱，用于提交信息
+          git config user.name "gh4zw"  # 设置用户名，用于提交信息
+          git config user.email "gozhome@163.com"  # 设置邮箱，用于提交信息
           git fetch upstream
           git checkout master
           git merge upstream/master --ff-only  # 或者使用 git pull --rebase upstream master 来使用rebase方式合并
